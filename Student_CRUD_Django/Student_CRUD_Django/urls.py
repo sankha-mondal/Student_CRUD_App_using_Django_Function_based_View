@@ -26,5 +26,4 @@ urlpatterns = [
     path('delete/<int:student_id>/', views.delete_student, name='delete_student'),
     path('update_type1/<int:student_id>/', views.update_student_type1, name='update_student_type1'),
     path('update_type2/<int:student_id>/', views.update_student_type2, name='update_student_type2'),
-
 ]
