@@ -6,3 +6,6 @@
 
 ## Add Students using Django Forms Type-2:
 <img width="855" height="435" alt="image" src="https://github.com/user-attachments/assets/1dabcf2e-5ffa-4295-a890-c367be215b18" />
+
+## Database output:
+<img width="504" height="208" alt="image" src="https://github.com/user-attachments/assets/09b60213-a59e-488f-af8c-a60db670e1c2" />
