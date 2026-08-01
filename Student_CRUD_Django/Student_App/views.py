@@ -10,6 +10,8 @@ def get_student(request):
     students = Student.objects.all()
     return render(request, 'students/index.html', {'students': students})
 
+
+
 ## Create a new student using the first method (manual form handling)
 ## http://127.0.0.1:8000/create_type1/
 def create_student_type1(request):
@@ -37,12 +39,18 @@ def create_student_type2(request):
         return redirect('/')
     return render(request, 'students/create_type2.html', {'form': form})
 
+
+
+
 ## Delete a student by ID and redirect to the index page
 ## http://127.0.0.1:8000/delete/<student_id>/
 def delete_student(request, student_id):
     student = Student.objects.get(id=student_id)
     student.delete()
     return redirect('/')
+
+
+
 
 def update_student_type1(request, student_id):
     student = Student.objects.get(id=student_id)
