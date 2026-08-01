@@ -52,6 +52,8 @@ def delete_student(request, student_id):
 
 
 
+## Update a student using the first method (manual form handling)
+## http://127.0.0.1:8000/update_type1/<student_id>/
 def update_student_type1(request, student_id):
     student = Student.objects.get(id=student_id)
     if request.method == 'POST':
@@ -69,6 +71,8 @@ def update_student_type1(request, student_id):
         return redirect('/')
     return render(request, 'students/update_type1.html', {'student': student})
 
+## Update a student using the second method (Django forms)
+## http://127.0.0.1:8000/update_type2/<student_id>/
 def update_student_type2(request, student_id):
     student = Student.objects.get(id=student_id)
     form = StudentForm(instance=student)
